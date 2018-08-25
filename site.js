@@ -10,6 +10,7 @@ function createElement(type, attributes, html) {
 
     return newElement
 }
+
 document.addEventListener("DOMContentLoaded", function (event) {
     document.body.insertBefore(createElement('div', [
         ['id', 'header'],
@@ -50,6 +51,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ['src', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"],
         ['integrity', "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"],
         ['crossorigin', "anonymous"]
+    ]));
+
+    document.head.appendChild(createElement('link', [
+        ['rel', 'stylesheet'],
+        ['href', '/site.css'],
     ]));
 
     setTimeout(loadBootStrapScript, 1000);
