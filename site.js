@@ -12,6 +12,19 @@ function createElement(type, attributes, html) {
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    document.head.appendChild(createElement('link', [
+        ['rel', 'stylesheet'],
+        ['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'],
+        ['integrity', 'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'],
+        ['crossorigin', 'anonymous'],
+    ]));
+
+    document.head.appendChild(createElement('link', [
+        ['rel', 'stylesheet'],
+        ['href', '/site.css'],
+    ]));
+
     document.body.insertBefore(createElement('div', [
         ['id', 'header'],
     ], `
@@ -34,12 +47,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     </nav>
     `), document.body.firstChild);
 
-    document.head.appendChild(createElement('link', [
-        ['rel', 'stylesheet'],
-        ['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'],
-        ['integrity', 'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'],
-        ['crossorigin', 'anonymous'],
-    ]));
+    document.body.appendChild(createElement('div', [
+        ['id', 'footer'],
+    ], `
+    <br>
+    <hr>
+    <br>
+    `));
 
     document.body.appendChild(createElement('script', [
         ['src', "https://code.jquery.com/jquery-3.2.1.slim.min.js"],
@@ -51,11 +65,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ['src', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"],
         ['integrity', "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"],
         ['crossorigin', "anonymous"]
-    ]));
-
-    document.head.appendChild(createElement('link', [
-        ['rel', 'stylesheet'],
-        ['href', '/site.css'],
     ]));
 
     setTimeout(loadBootStrapScript, 1000);
