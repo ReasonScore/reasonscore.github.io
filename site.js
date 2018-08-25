@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     ], `
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">
-            <img src="logo.png" alt="Reason Score">
+            <img src="/logo.png" alt="Reason Score">
         </a>
         <div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
