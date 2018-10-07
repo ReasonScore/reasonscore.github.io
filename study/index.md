@@ -4,7 +4,7 @@ title: Reason Score Study
 datePublished: 2018-6-10
 ---
 <div>
-    <div class="content">
+    <div class="content" style="min-height:600px">
         <h1>Help save the word - Usability Study</h1>
         <p>
             Help save the word by participating in a one hour online software usability study. Our goal is to help people
@@ -30,5 +30,10 @@ datePublished: 2018-6-10
         <p>If you meet all these requirements please choose a time below and fill out the 10 questions that follow.</p>
         <p>We have a limited number of spots. Filling out the form does not guarantee participation in the study.</p>
     </div>
-    <iframe style="border: solid 1px #666a73;" src="https://calendly.com/reasonscore/meeting" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+    <amp-iframe width="600" height="600" frameborder="0" scrolling="no"
+        sandbox="allow-scripts allow-same-origin"
+        layout="responsive"
+        src="https://calendly.com/reasonscore/meeting"
+        style="border: solid 1px #666a73;height: 1100px;">
+    </amp-iframe>
 </div>
