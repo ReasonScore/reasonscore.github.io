@@ -3,7 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
   return {
     dir: {
-      output: "_site"
+      output: "dist"
     }
   }
 };
