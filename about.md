@@ -23,9 +23,7 @@ datePublished: 2018-6-10
                     <h5 class="card-title">Advisor – Dr. Gleb Tsipursky</h5>
                     <p class="card-text">
                             Dr. Gleb Tsipursky is passionate about promoting science-based decision-making
-                            and emotional and social intelligence to help leaders, organizations, and our society avoid disasters. He researches
-                            these topics as a tenure-track&nbsp;<a href="https://news.osu.edu/faculty-experts/n%E2%80%93z/tsipursky-gleb.html" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://news.osu.edu/faculty-experts/n%25E2%2580%2593z/tsipursky-gleb.html&amp;source=gmail&amp;ust=1497812573189000&amp;usg=AFQjCNHPINp2jGPrInEMQ9Z0e9sk2XX9NQ">professor</a><span class="m_4592626998764862952gmail-apple-converted-space">&nbsp;</span>at The Ohio State University’s Decision Sciences
-                            Collaborative and History Department. A civic activist for rational thinking in politics and other life areas, Gleb
+                            and emotional and social intelligence to help leaders, organizations, and our society avoid disasters. A civic activist for rational thinking in politics and other life areas, Gleb
                             serves as the volunteer President of a nonprofit devoted to this mission, <a href="http://intentionalinsights.org/" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=http://intentionalinsights.org/&amp;source=gmail&amp;ust=1497812573189000&amp;usg=AFQjCNG1ks-wXHLPvtcKxsnOJgFSN0AVNw">Intentional
                                 Insights
                             </a>.<span class="m_4592626998764862952gmail-apple-converted-space">&nbsp;</span>He frequently publishes pieces on
