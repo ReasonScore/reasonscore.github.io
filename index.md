@@ -58,5 +58,13 @@ datePublished: 2018-6-10
             <li>organizes the reasons so you don’t have to read them all to understand</li>
             <li>the reasons you put in can not be dismissed (because they immediately affect the score)</li>
         </ul>
+        <br/>
+        <a href="https://reasonscore.com/ReasonScore/public/edit/?id=r4nzScKwqhi7#">Demo</a>
+        <!-- <amp-iframe width="600" height="1000"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            frameborder="0"
+            src="https://reasonscore.com/ReasonScore/public/edit/?id=r4nzScKwqhi7#">
+        </amp-iframe> -->
     </div>
 </div>
