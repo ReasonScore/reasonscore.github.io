@@ -26,7 +26,8 @@ datePublished: 2018-6-10
             width: 100%;
             padding: 15px;
             box-sizing: border-box;">
-            <h1>They just don't understand!</h1>
+            <h1>Better Decisions</h1>
+            <h1>More Agreement</h1>
             Reason Score is a process where:
             <ul style="        text-align: left;
                 margin: auto;
