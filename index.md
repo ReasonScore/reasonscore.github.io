@@ -1,5 +1,5 @@
 ---
-layout: page.njk
+layout: page.html
 title: Reason Score
 datePublished: 2018-6-10
 ---
@@ -46,6 +46,11 @@ datePublished: 2018-6-10
                 baseline of facts.” - Barack Obama</p>
         </blockquote>
         <h1>How Does it Work?</h1>
+        <amp-youtube
+            data-videoid="2yetm0uNv74"
+            layout="responsive"
+            width="480" height="270"
+            style="border: 1px grey solid;"></amp-youtube>
         <blockquote>Would you trust a cashier at a grocery store to total your bill in their head?</blockquote>
         <p>Two people looking at a shopping cart and guessing the total price usually disagree. It’s no wonder that after reading
             several articles or listening to a debate that people have different opinions. Even just a 10% increase in agreement
@@ -60,7 +65,7 @@ datePublished: 2018-6-10
             <li>the reasons you put in can not be dismissed (because they immediately affect the score)</li>
         </ul>
         <br/>
-        <a href="https://reasonscore.com/ReasonScore/public/edit/?id=r4nzScKwqhi7#">Demo</a>
+        <a href="demo">Demo</a>
         <!-- <amp-iframe width="600" height="1000"
             sandbox="allow-scripts allow-same-origin"
             layout="responsive"

@@ -1,5 +1,5 @@
 ---
-layout: page.njk
+layout: page.html
 title: Reason Score
 datePublished: 2018-6-10
 ---
