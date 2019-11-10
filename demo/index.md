@@ -1,7 +1,7 @@
 ---
 layout: page.html
 title: Reason Score
-datePublished: 2018-6-10
+datePublished: 2019-11-09
 ---
 <link rel="stylesheet" href="reasonScore.css" />
 <script src="ReasonScoreCore-0.js"></script>
