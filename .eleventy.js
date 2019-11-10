@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("safari-pinned-tab.svg");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("demo");
+  eleventyConfig.addPassthroughCopy("should-we-build-the-infinitetransit-flyway");
   return {
     dir: {
       output: "dist"
