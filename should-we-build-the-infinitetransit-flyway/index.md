@@ -15,6 +15,107 @@ datePublished: 2018-6-10
       "trans": "qVW5zS9hcELl",
       "ver": "qVW5zS9hcEL2",
       "start": "2019-11-08T23:46:48.159Z",
+      "end": "3000-01-01T00:00:00.000Z",
+      "isChildrenDisplayed": true
+    },
+    "Ykf06yzYxabm": {
+      "type": "claim",
+      "id": "Ykf06yzTU8y8",
+      "content": "It will mitigate economic stagnation",
+      "ver": "Ykf06yzYxabm",
+      "start": "2019-11-11T03:05:38.073Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf06yzcoFbt": {
+      "type": "argument",
+      "id": "Ykf06yzg6RFb",
+      "parent": "qVW5afkgWU4M",
+      "child": "Ykf06yzTU8y8",
+      "scope": "qVW5afkgWU4M",
+      "pro": true,
+      "affects": "truth",
+      "ver": "Ykf06yzcoFbt",
+      "start": "2019-11-11T03:05:38.073Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf06crv2Ff0": {
+      "type": "claim",
+      "id": "Ykf06cr9mc8C",
+      "content": "Robotic Vehicles will fulfill the needs of the infiniteTransit flyway.",
+      "ver": "Ykf06crv2Ff0",
+      "start": "2019-11-11T03:05:39.445Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf06crGKlh0": {
+      "type": "argument",
+      "id": "Ykf06cr2cSju",
+      "parent": "qVW5afkgWU4M",
+      "child": "Ykf06cr9mc8C",
+      "scope": "qVW5afkgWU4M",
+      "pro": false,
+      "affects": "truth",
+      "ver": "Ykf06crGKlh0",
+      "start": "2019-11-11T03:05:39.445Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf02hezLFoq": {
+      "type": "claim",
+      "id": "Ykf02hepthju",
+      "content": "It will reduce congestion",
+      "ver": "Ykf02hezLFoq",
+      "start": "2019-11-11T03:05:54.524Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf02heoVVpT": {
+      "type": "argument",
+      "id": "Ykf02heBb0eZ",
+      "parent": "Ykf06yzTU8y8",
+      "child": "Ykf02hepthju",
+      "scope": "Ykf06yzTU8y8",
+      "pro": true,
+      "affects": "truth",
+      "ver": "Ykf02heoVVpT",
+      "start": "2019-11-11T03:05:54.524Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf022vO0Td6": {
+      "type": "claim",
+      "id": "Ykf022vCDxr2",
+      "content": "it will bring together separate socio-economic zones",
+      "ver": "Ykf022vO0Td6",
+      "start": "2019-11-11T03:05:55.437Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf022vvLCKX": {
+      "type": "argument",
+      "id": "Ykf022vi13bF",
+      "parent": "Ykf06yzTU8y8",
+      "child": "Ykf022vCDxr2",
+      "scope": "Ykf06yzTU8y8",
+      "pro": true,
+      "affects": "truth",
+      "ver": "Ykf022vvLCKX",
+      "start": "2019-11-11T03:05:55.437Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf01e4yxJtv": {
+      "type": "claim",
+      "id": "Ykf01e4CgdZa",
+      "content": "Robotic vehicles will need to coexist with human drivers for the foreseeable future which will limit them to approximately 65 MPH (Level 4) while infiniteTransit is up to 130 mph (Level 5).",
+      "ver": "Ykf01e4yxJtv",
+      "start": "2019-11-11T03:05:58.564Z",
+      "end": "3000-01-01T00:00:00.000Z"
+    },
+    "Ykf01e4xbb6X": {
+      "type": "argument",
+      "id": "Ykf01e4b08Pr",
+      "parent": "Ykf06cr9mc8C",
+      "child": "Ykf01e4CgdZa",
+      "scope": "Ykf06cr9mc8C",
+      "pro": false,
+      "affects": "truth",
+      "ver": "Ykf01e4xbb6X",
+      "start": "2019-11-11T03:05:58.564Z",
       "end": "3000-01-01T00:00:00.000Z"
     }
   }
