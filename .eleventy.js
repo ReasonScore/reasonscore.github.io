@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("demo");
   eleventyConfig.addPassthroughCopy("should-we-build-the-infinitetransit-flyway");
   eleventyConfig.addPassthroughCopy("flyway");
+  eleventyConfig.addPassthroughCopy("flyway2");
   return {
     dir: {
       output: "dist"
