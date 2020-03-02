@@ -47,7 +47,7 @@ datePublished: 2018-6-10
         </blockquote>
         <h1>How Does it Work?</h1>
         <amp-youtube
-            data-videoid="2yetm0uNv74"
+            data-videoid="eDgby2DaUKo"
             layout="responsive"
             width="480" height="270"
             style="border: 1px grey solid;"></amp-youtube>
