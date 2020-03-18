@@ -8,18 +8,27 @@
     <style>
       body {
         font-size: 16pt;
-      }
-      .lead{
-        font-weight: unset;
+        font-weight: 500;
       }
 
-      .grid-how {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      .lead {
+        font-weight: unset;
+        font-size: 2rem;
+        margin-bottom: 1.5em;
       }
+
+      .grid-custom {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      }
+
+      .grid-bullets div:before {
+        content: '-';
+      }
+
       h1 {
-        margin: 10rem 0 2rem 0;
+        margin: 10rem 0 2rem;
       }
     </style>
   </head>
@@ -60,10 +69,10 @@
       <p class="lead">It can feel impossible to get everybody to agree on the best path forward -- whether it's starting a new product, or moving in a new direction.</p>
       <p class="lead">And when people aren't in agreement, the quality of work suffers. It's difficult to motivate your team members to work on something they don't agree with.</p>
       <h1>Three steps to use Reason Score</h1>
-      <div class="grid-how">
+      <div class="grid-custom">
         <div >
           <img src="icon1.gif" style="display: block;" alt="...">
-          Describe the decision<br>to&nbsp;be&nbsp;made
+          Describe the decision to&nbsp;be&nbsp;made
         </div>
         <div>
           <img src="icon2.gif" style="display: block;" alt="...">
@@ -75,12 +84,12 @@
         </div>
       </div>
       <h1>How Reason Score Helps your Team Agree</h1>
-      <div class="grid-how">
+      <div class="grid-custom grid-bullets">
         <div >
           Summarizes Complexity
         </div>
         <div >
-          Everyone is heard
+          Everyone is Heard
         </div>
         <div >
           Evidence Based
@@ -92,7 +101,7 @@
           Time to Process
         </div>
         <div >
-          Divide and conquer
+          Divide and Conquer
         </div>
         <div >
           Easy to Understand Results
@@ -107,7 +116,7 @@
       <h1></h1>
       <img src="video.png" class="img-fluid mx-auto d-block" alt="Explainer Video">
       <h1></h1>
-      <div class="grid-how">
+      <div class="grid-custom">
         <a class="btn btn-primary btn-lg" href="#" role="button">Free Trial</a>
         <a class="btn btn-outline-primary btn-lg" href="#" role="button">Live Demo</a>
       </div>
