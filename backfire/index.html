@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>window.RsSettings = { disableExternalDb: !1, numbers: !0, lines: !0, editable: !0, startClosed: !1, portData: !0, scoreDescription: !1 }, window.RsExpandChildren = function (e) { const d = window.document.getElementById("expander-" + e), s = window.document.getElementById("children-" + e); s.classList.contains("hide") ? (s.classList.remove("hide"), d.classList.add("expanded"), d.classList.remove("collapsed")) : (s.classList.add("hide"), d.classList.remove("expanded"), d.classList.add("collapsed")) }, window.RsActions = [{ newData: { content: "new Claim", id: "topClaim", reversible: !1, type: "claim" }, type: "add_claim", dataId: "topClaim" }, { newData: { sourceClaimId: "topClaim", topScoreId: "topScore", confidence: 1, id: "ScoreTree", type: "scoreTree" }, type: "add_scoreTree", dataId: "ScoreTree" }]</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reason Score Prototype Editor</title>
+    <style>
+        body {
+            padding: 10px
+        }
+    </style>
+    <link href="static/css/main.c7de05ed.chunk.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="UserName" style="text-align:right;min-height:24px"></div>
+    <div id="firebaseui-auth-container"></div>
+    <rs-score score-tree-id="ScoreTree"></rs-score>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script>window.RsSettings && window.RsSettings.disableExternalDb || (firebase.initializeApp({ apiKey: "AIzaSyBmu9Lhj9Stp8dhamvCA4oi16o_jU4qnQM", authDomain: "reason-score.firebaseapp.com", databaseURL: "https://reason-score.firebaseio.com", projectId: "reason-score", storageBucket: "reason-score.appspot.com", messagingSenderId: "403624872089", appId: "1:403624872089:web:5d9685888a79f58ebe5008" }), window.RsDatabase = firebase.firestore().collection("backfire"), firebase.auth().onAuthStateChanged((function (e) { e ? document.getElementById("UserName").innerText = e.displayName : new firebaseui.auth.AuthUI(firebase.auth()).start("#firebaseui-auth-container", { callbacks: { signInSuccessWithAuthResult: function (e, a) { return !1 } }, signInFlow: "popup", signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.FacebookAuthProvider.PROVIDER_ID, firebase.auth.TwitterAuthProvider.PROVIDER_ID, firebase.auth.GithubAuthProvider.PROVIDER_ID, firebase.auth.EmailAuthProvider.PROVIDER_ID], tosUrl: "terms-of-service", privacyPolicyUrl: "privacy-policy" }) })))</script>
+    <script>!function (e) { function r(r) { for (var n, i, l = r[0], f = r[1], a = r[2], c = 0, s = []; c < l.length; c++)i = l[c], Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]), o[i] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (p && p(r); s.length;)s.shift()(); return u.push.apply(u, a || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var f = t[l]; 0 !== o[f] && (n = !1) } n && (u.splice(r--, 1), e = i(i.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function i(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, i), t.l = !0, t.exports } i.m = e, i.c = n, i.d = function (e, r, t) { i.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, i.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.t = function (e, r) { if (1 & r && (e = i(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (i.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) i.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, i.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return i.d(r, "a", r), r }, i.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, i.p = "/"; var l = this.webpackJsonpeditor = this.webpackJsonpeditor || [], f = l.push.bind(l); l.push = r, l = l.slice(); for (var a = 0; a < l.length; a++)r(l[a]); var p = f; t() }([])</script>
+    <script src="static/js/2.031b9651.chunk.js"></script>
+    <script src="static/js/main.10890920.chunk.js"></script>
+</body>
+
+</html>
