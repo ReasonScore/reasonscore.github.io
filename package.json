@@ -6,11 +6,13 @@
   "scripts": {
     "start": "eleventy --serve --watch",
     "build": "eleventy",
-    "deploy": "gh-pages -d dist -b master"
+    "deploy": "gh-pages -d dist -b master",
+    "upgrade-all": "ncu -u --timeout 60000 && npm install"
   },
   "author": "Bentley Davis <Bentley@BentleyDavis.com> (http://BentleyDavis.com)",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "npm-check-updates": "^4.1.2"
   }
 }
