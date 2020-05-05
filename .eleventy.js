@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("demo");
   eleventyConfig.addPassthroughCopy("houston-flyway");
   eleventyConfig.addPassthroughCopy("edit");
+  eleventyConfig.addPassthroughCopy("static");
   //Temp
   eleventyConfig.addPassthroughCopy("design");
   return {
