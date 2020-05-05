@@ -1,0 +1,24 @@
+---
+layout: page.html
+title: "Houston Flyway Reason Score"
+permalink: houston-flyway-edit/index.html
+---
+<div class="content">
+  <rs-score score-tree-id="ScoreTree"></rs-score>
+</div>
+<script> //Settings for this page
+  window.RsSettings = {
+    disableExternalDb: false,
+    numbers: false,
+    largeNumbers: false,
+    lines: true,
+    editable: true,
+    startClosed: false,
+    portData: false,
+    scoreDescription: false,
+    saveToCloud: true,
+    moreInfo: true,
+    dbCollection: "f-flyway"
+  }
+</script>
+<script src="/static/js/ReasonScoreFull.js"></script>

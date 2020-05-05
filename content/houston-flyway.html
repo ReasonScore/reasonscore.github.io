@@ -1,24 +1,32 @@
 ---
-layout: page.html
-title: "Houston Flyway Reason Score"
 permalink: houston-flyway/index.html
 ---
-<div class="content">
-  <rs-score score-tree-id="ScoreTree"></rs-score>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Houston Flyway - Reason Score</title>
+</head>
+
+<body>
+  <rs-score score-tree-id="ScoreTree"> </rs-score>
+</body>
 <script> //Settings for this page
   window.RsSettings = {
     disableExternalDb: false,
     numbers: false,
     largeNumbers: false,
     lines: true,
-    editable: true,
+    editable: false,
     startClosed: false,
-    portData: true,
+    portData: false,
     scoreDescription: false,
-    saveToCloud: true,
+    saveToCloud: false,
     moreInfo: true,
     dbCollection: "f-flyway"
   }
 </script>
 <script src="/static/js/ReasonScoreFull.js"></script>
+</html>
