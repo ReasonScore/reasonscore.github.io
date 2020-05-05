@@ -11,11 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("mstile-150x150.png");
   eleventyConfig.addPassthroughCopy("safari-pinned-tab.svg");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
-  eleventyConfig.addPassthroughCopy("houston-flyway");
-  eleventyConfig.addPassthroughCopy("edit");
   eleventyConfig.addPassthroughCopy("static");
-  //Temp
-  eleventyConfig.addPassthroughCopy("design");
   return {
     dir: {
       output: "dist"

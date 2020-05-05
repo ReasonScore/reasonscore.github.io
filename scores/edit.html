@@ -1,0 +1,24 @@
+---
+layout: page.html
+title: "Reason Score Editor"
+permalink: edit/index.html
+---
+<div class="content">
+  <rs-score score-tree-id="ScoreTree"></rs-score>
+</div>
+<script> //Settings for this page
+  window.RsSettings = {
+    disableExternalDb: false,
+    numbers: true,
+    largeNumbers: true,
+    lines: false,
+    editable: true,
+    startClosed: false,
+    portData: true,
+    scoreDescription: false,
+    saveToCloud: false,
+    moreInfo: true,
+    dbCollection: "f-" + new URL(window.location.href).searchParams.get("i"),
+  }
+</script>
+<script src="/static/js/ReasonScoreFull.js"></script>
