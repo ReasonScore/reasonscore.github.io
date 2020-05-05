@@ -1,77 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- edit.html -->
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reason Score Login</title>
-  <style>
-    body {
-      padding: 5%;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 0;
-        margin: 0;
+<!doctype html>
+<html amp="amp" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <title>Log In</title>
+    <link rel="canonical" href="/login/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Log In",
+        "datePublished": "",
+        "image": ["/static/img/logo.png"]
       }
-    }
-  </style>
-</head>
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700)">
+    <style amp-custom="amp-custom">
+      html{
+        overflow-x: unset!important;
+      }
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      }
+      header {
+        background: white;
+        color: #c880ff;
+        font-size: 1.5em;
+        padding: 0 5px;
+      }
+      .headerbar {
+        height: 50px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        max-width: 800px;
+      }
+      .site-name {
+        flex: 1;
+      }
+      .topnav {
+        display: none;
+        padding: 0 10px 0 0;
+      }
+      @media (min-width: 600px) {
+        .topnav {
+          display: unset;
+        }
+        .hamburger {
+          display: none;
+        }
+      }
+      .topnav li {
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+      .hamburger {
+        margin-right: 10px;
+        outline: none;
+        font-size: .7em;
+        border: 1px solid #c880ff;
+        padding: 5px 5px 7px 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }      
+      .sidebar {
+        padding: 10px;
+        margin: 0;
+        font-size: 2em;
+      }
+      .headerbar li {
+        list-style: none;
+        margin-bottom:10px;
+      }
+      a {
+        text-decoration: none;
+        color: #c880ff;
+      }
+      .close-sidebar {
+        font-size: 2em;
+        padding-right: 10px;
+        text-align: right;
+        margin-right: 10px;
+        outline: none;
+        padding: 5px 5px 7px 5px;
+        cursor: pointer;
+      }
+      .content {
+        padding: 0 15px;
+        margin: auto;
+        max-width: 800px;
+      }
+      h1, h2{
+          margin-block-end: 0.2em;
+      }
+      ul{
+        margin:0;
+      }
+      .card-deck {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .card-deck .card {
+          margin-bottom: 15px;
+      }
 
-<body>
-  <div id="UserName" style="text-align: right;min-height: 24px;"></div>
-  <div id="firebaseui-auth-container"></div>
-  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-  <script>
+      .card {
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0,0,0,.125);
+          border-radius: .25rem;
+      }
+      .card-img-top {
+          width: 100%;
+          border-top-left-radius: calc(.25rem - 1px);
+          border-top-right-radius: calc(.25rem - 1px);
+      }
+
+      img {
+          vertical-align: middle;
+          border-style: none;
+      }
+      .card-body {
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          padding: 1.25rem;
+      }
+      .card-title {
+          margin-bottom: .75rem;
+      }
+      .card-text:last-child {
+          margin-bottom: 0;
+      }
+      @media (min-width: 576px) {
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+      }
+      @media (min-width: 576px){
+.card-deck .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}}
+    </style>
+  </head>
+  <body>
+    <header class="headerbar">
+      <div class="site-name">
+      <a href="/">
+        <amp-img src="/static/img/rslogowide.png" alt="Reason Score Logo" width="230" height="50" style="top: 3px;">
+      </a>
+      </div>
+      <ul class="topnav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">MENU</div>
+    </header>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+      <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+      <ul class="sidebar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </amp-sidebar>
+      <div class="content">
+    <div id="UserName" style="text-align: right;min-height: 24px;"></div>
+    <div id="firebaseui-auth-container"></div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<script>
     // Firestore Setup
     if (!window.RsSettings || !window.RsSettings.disableExternalDb) {
-      firebase.initializeApp({
-        apiKey: "AIzaSyBmu9Lhj9Stp8dhamvCA4oi16o_jU4qnQM",
-        authDomain: "reason-score.firebaseapp.com",
-        databaseURL: "https://reason-score.firebaseio.com",
-        projectId: "reason-score",
-        storageBucket: "reason-score.appspot.com",
-        messagingSenderId: "403624872089",
-        appId: "1:403624872089:web:5d9685888a79f58ebe5008"
-      });
-
-      //Detect Logged in
-      firebase
-        .auth()
-        .onAuthStateChanged(function (user) {
-          if (user) {
-            document
-              .getElementById('UserName')
-              .innerText = user.displayName;
-          } else {
-            //Show LogIn Screen
-            var ui = new firebaseui
-              .auth
-              .AuthUI(firebase.auth());
-            ui.start('#firebaseui-auth-container', {
-              callbacks: {
-                signInSuccessWithAuthResult: function (authResult, redirectUrl) {
-                  return false; //Do not redirect
-                }
-              },
-              signInFlow: 'popup',
-              signInOptions: [
-                firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.FacebookAuthProvider.PROVIDER_ID, firebase.auth.TwitterAuthProvider.PROVIDER_ID, firebase.auth.GithubAuthProvider.PROVIDER_ID, firebase.auth.EmailAuthProvider.PROVIDER_ID
-              ],
-              tosUrl: 'terms-of-service',
-              privacyPolicyUrl: 'privacy-policy'
-            });
-          }
+        firebase.initializeApp({
+            apiKey: "AIzaSyBmu9Lhj9Stp8dhamvCA4oi16o_jU4qnQM",
+            authDomain: "reason-score.firebaseapp.com",
+            databaseURL: "https://reason-score.firebaseio.com",
+            projectId: "reason-score",
+            storageBucket: "reason-score.appspot.com",
+            messagingSenderId: "403624872089",
+            appId: "1:403624872089:web:5d9685888a79f58ebe5008"
         });
+
+        //Detect Logged in
+        firebase
+            .auth()
+            .onAuthStateChanged(function (user) {
+                if (user) {
+                    document
+                        .getElementById('UserName')
+                        .innerText = user.displayName;
+                } else {
+                    //Show LogIn Screen
+                    var ui = new firebaseui
+                        .auth
+                        .AuthUI(firebase.auth());
+                    ui.start('#firebaseui-auth-container', {
+                        callbacks: {
+                            signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+                                return false; //Do not redirect
+                            }
+                        },
+                        signInFlow: 'popup',
+                        signInOptions: [
+                            firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.FacebookAuthProvider.PROVIDER_ID, firebase.auth.TwitterAuthProvider.PROVIDER_ID, firebase.auth.GithubAuthProvider.PROVIDER_ID, firebase.auth.EmailAuthProvider.PROVIDER_ID
+                        ],
+                        tosUrl: 'terms-of-service',
+                        privacyPolicyUrl: 'privacy-policy'
+                    });
+                }
+            });
     }
-  </script>
-
-</body>
-
+</script>
+    <br>
+    <br>
+  </body>
 </html>
