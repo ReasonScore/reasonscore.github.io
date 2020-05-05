@@ -41,7 +41,6 @@
 
     // Run any code that requires Javascript to have already been loaded and run 
     onload1 = function () {
-        console.log("scripts1 done")
         // Firestore Setup
         if (!window.RsSettings || !window.RsSettings.disableExternalDb) {
             firebase.initializeApp({
@@ -72,11 +71,7 @@
             lastScriptElement2.async = false;
             document.body.appendChild(lastScriptElement2);
         }
-        lastScriptElement2.onload = function () {
-            console.log("scripts2 done")
-        }
     }
-
 
     //append first batch of scripts (listed out of order)
     // TODO: Correct order of these scripts
