@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve --watch",
     "build": "eleventy",
-    "deploy": "gh-pages -d dist -b master",
+    "deploy": "eleventy && gh-pages -d dist -b master",
     "upgrade-all": "ncu -u --timeout 60000 && npm install"
   },
   "author": "Bentley Davis <Bentley@BentleyDavis.com> (http://BentleyDavis.com)",
