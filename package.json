@@ -4,9 +4,10 @@
   "description": "Reason Score",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve --watch",
-    "build": "eleventy",
-    "deploy": "eleventy && gh-pages -d dist -b master",
+    "start": "del dist /q && eleventy --serve --watch",
+    "build": "del dist /q && eleventy",
+    "debug": "@powershell -Command $env:DEBUG='*'; eleventy",
+    "deploy": "del dist /q && eleventy && gh-pages -d dist -b master",
     "upgrade-all": "ncu -u --timeout 60000 && npm install"
   },
   "author": "Bentley Davis <Bentley@BentleyDavis.com> (http://BentleyDavis.com)",
