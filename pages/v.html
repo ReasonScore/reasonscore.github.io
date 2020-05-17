@@ -1,7 +1,7 @@
 ---
 layout: page.html
-title: "Should Denver replace their pit bull ban with a breed license"
-permalink: denver-pit-bull-ban/index.html
+title: "Reason Score"
+permalink: v/index.html
 ---
 <div class="content">
   {% include feedback.html %}
@@ -13,9 +13,13 @@ permalink: denver-pit-bull-ban/index.html
     numbers: true,
     largeNumbers: true,
     lines: false,
+    editable: true,
     startClosed: false,
+    portData: false,
+    scoreDescription: false,
+    saveToCloud: false,
     moreInfo: true,
-    dbCollection: "f-denverpbb",
+    dbCollection: "f-" + new URL(window.location.href).searchParams.get("i"),
   }
 </script>
 <script src="/static/js/ReasonScoreFull.js"></script>
