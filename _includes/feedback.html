@@ -2,17 +2,21 @@
 <p>
     This reason score has not been researched in depth and the public review has not been
     completed. Please send suggestions by
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text=" "
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" id="feedback1" data-text=" "
         data-url="https://ReasonScore.com{{ page.url }}" data-via="Reason-Score" data-show-count="false">
         Tweet
     </a>.
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     This will keep the feedback public and transparent. We will update this discussion and reply back on twitter. You
     can see the
-    <a href="https://twitter.com/search?q=reasonscore.com{{ page.url }}" target="_blank">public feedback on
+    <a id="feedback2" href="https://twitter.com/search?q=reasonscore.com{{ page.url }}" target="_blank">public feedback on
         Twitter
     </a>.
     You can also contact us on
     <a href="https://www.facebook.com/ReasonScore/">Facebook</a>
     or by email to info at this domain.
 </p>
+<script>
+    document.querySelector("#feedback1").setAttribute('data-url', document.location);
+    document.querySelector("#feedback2").setAttribute('href', 'https://twitter.com/search?q=' + document.location);
+</script>
