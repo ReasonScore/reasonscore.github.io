@@ -7,9 +7,9 @@
         "https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js",
     ]
     const scripts2 = [
-
+        
         rootAddress + "/static/js/2.a3580999.chunk.js",
-        rootAddress + "/static/js/main.80ebdd35.chunk.js",
+        rootAddress + "/static/js/main.6310ea1c.chunk.js",
     ]
 
     // default settings
@@ -31,12 +31,12 @@
     }
 
     // Add Standard HTML and CSS
-    const r = document.createElement('div')
-    r.innerHTML = `
-        <link href="${rootAddress}/static/css/main.c491b4c8.chunk.css" rel="stylesheet">
+        const r = document.createElement('div')
+        r.innerHTML = `
+        <link href="${rootAddress}/static/css/main.f3398506.chunk.css" rel="stylesheet">
 
     `;
-    document.body.appendChild(r);
+        document.head.appendChild(r);
 
     // Run any code that requires Javascript to have already been loaded and run 
     onload1 = function () {
