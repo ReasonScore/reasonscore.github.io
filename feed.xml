@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Reason Score Updates</title>
+  <subtitle>Mass Agreement</subtitle>
+  <link href="https://ReasonScore.com/feed.xml" rel="self"/>
+  <link href="https://ReasonScore.com/"/>
+  <id>https://ReasonScore.com/</id>
+  <author>
+    <name>Reason Score</name>
+    <email>info@ReasonScore.com</email>
+  </author>
+</feed>
