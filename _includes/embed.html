@@ -1,0 +1,176 @@
+<!doctype html>
+<html amp="amp" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700)">
+    <style amp-custom="amp-custom">
+      html{
+        overflow-x: unset!important;
+      }
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      }
+      header {
+        background: white;
+        color: #c880ff;
+        font-size: 1.5em;
+        padding: 0 5px;
+      }
+      .headerbar {
+        height: 50px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        max-width: 800px;
+      }
+      .site-name {
+        flex: 1;
+      }
+      .topnav {
+        display: none;
+        padding: 0 10px 0 0;
+      }
+      @media (min-width: 600px) {
+        .topnav {
+          display: unset;
+        }
+        .hamburger {
+          display: none;
+        }
+      }
+      .topnav li {
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+      .hamburger {
+        margin-right: 10px;
+        outline: none;
+        font-size: .7em;
+        border: 1px solid #c880ff;
+        padding: 5px 5px 7px 5px;
+        border-radius: 10px;
+        cursor: pointer;
+      }      
+      .sidebar {
+        padding: 10px;
+        margin: 0;
+        font-size: 2em;
+      }
+      .headerbar li {
+        list-style: none;
+        margin-bottom:10px;
+      }
+      a {
+        text-decoration: none;
+        color: #b758ff;
+        font-weight: bold;
+      }
+      .close-sidebar {
+        font-size: 2em;
+        padding-right: 10px;
+        text-align: right;
+        margin-right: 10px;
+        outline: none;
+        padding: 5px 5px 7px 5px;
+        cursor: pointer;
+      }
+      .content {
+        padding: 0 15px;
+        margin: auto;
+        max-width: 800px;
+      }
+      h1, h2{
+          margin-block-end: 0.2em;
+      }
+      ul{
+        margin:0;
+      }
+      .card-deck {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .card-deck .card {
+          margin-bottom: 15px;
+      }
+
+      .card {
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0,0,0,.125);
+          border-radius: .25rem;
+      }
+      .card-img-top {
+          width: 100%;
+          border-top-left-radius: calc(.25rem - 1px);
+          border-top-right-radius: calc(.25rem - 1px);
+      }
+
+      img {
+          vertical-align: middle;
+          border-style: none;
+      }
+      .card-body {
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          padding: 1.25rem;
+      }
+      .card-title {
+          margin-bottom: .75rem;
+      }
+      .card-text:last-child {
+          margin-bottom: 0;
+      }
+      @media (min-width: 576px) {
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+      }
+      @media (min-width: 576px){
+.card-deck .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}}
+    </style>
+  </head>
+  <body>
+      {{ content | safe }}
+  </body>
+</html>
