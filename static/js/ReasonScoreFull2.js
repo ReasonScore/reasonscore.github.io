@@ -8,8 +8,8 @@
     ]
     const scripts2 = [
         
-        rootAddress + "/static/js/2.a3580999.chunk.js",
-        rootAddress + "/static/js/main.6310ea1c.chunk.js",
+        rootAddress + "/static/js/2.e50837ba.chunk.js",
+        rootAddress + "/static/js/main.c0dd3cfe.chunk.js",
     ]
 
     // default settings
@@ -31,12 +31,14 @@
     }
 
     // Add Standard HTML and CSS
+    //if (rootAddress !== "") {
         const r = document.createElement('div')
         r.innerHTML = `
-        <link href="${rootAddress}/static/css/main.f3398506.chunk.css" rel="stylesheet">
+        <link href="${rootAddress}/static/css/main.3f62a026.chunk.css" rel="stylesheet">
 
     `;
-        document.head.appendChild(r);
+        document.body.appendChild(r);
+    //}
 
     // Run any code that requires Javascript to have already been loaded and run 
     onload1 = function () {
