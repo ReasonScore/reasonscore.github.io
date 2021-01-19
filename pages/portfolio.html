@@ -3,25 +3,23 @@ layout: embed.html
 permalink: portfolio/
 ---
 <style>
-.rs-score, rs-score {
+  .rs-score,
+  rs-score {
     overflow: auto;
-}
+  }
 </style>
 
-<div class="content">
-  <h2>Choose different User Interface Options:</h2>
-  <div class="rs-score" style="  position: relative;
+<div class="rs-score" style="  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 1rem;">
-    <button onclick="showLarge()" type="button" class="btn btn-primary"> Large Scores</button>
-    <button onclick="showSmall()" type="button" class="btn btn-primary"> Small Scores</button>
-    <button onclick="showLines()" type="button" class="btn btn-primary"> Line Scores</button>
-    <button onclick="descriptions()" type="button" class="btn btn-primary"> Descriptions</button>
-    <button onclick="reset()" type="button" class="btn btn-secondary"> Clear</button>
-  </div>
-  <rs-score score-tree-id="ScoreTree"></rs-score>
+  <button onclick="showLarge()" type="button" class="btn btn-primary"> Large Scores</button>
+  <button onclick="showSmall()" type="button" class="btn btn-primary"> Small Scores</button>
+  <button onclick="showLines()" type="button" class="btn btn-primary"> Line Scores</button>
+  <button onclick="descriptions()" type="button" class="btn btn-primary"> Descriptions</button>
+  <button onclick="reset()" type="button" class="btn btn-secondary"> Clear</button>
 </div>
+<rs-score score-tree-id="ScoreTree"></rs-score>
 
 <script>
   // Buttons
@@ -39,7 +37,7 @@ permalink: portfolio/
     changeSettings(true, true, false);
   }
 
-  descriptions = function() {
+  descriptions = function () {
     document.getElementById('s-scoreDescription').click();
   }
 
