@@ -4,6 +4,11 @@ object-assign
 @license MIT
 */
 
+/*!
+   * mustache.js - Logic-less {{mustache}} templates with JavaScript
+   * http://github.com/janl/mustache.js
+   */
+
 /*! http://mths.be/repeat v0.2.0 by @mathias */
 
 /** @license React v0.20.2
