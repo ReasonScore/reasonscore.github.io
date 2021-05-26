@@ -9,7 +9,7 @@
     const scripts2 = [
         
         rootAddress + "/static/js/2.45bd1205.chunk.js",
-        rootAddress + "/static/js/main.410a4936.chunk.js",
+        rootAddress + "/static/js/main.98dd0d4f.chunk.js",
     ]
 
     // default settings
@@ -71,8 +71,10 @@
                 document.body.appendChild(lastScriptElement2);
             }
             lastScriptElement2.onload = function () {
-                // console.log("scripts2 done")
+                window.rsStartApp(); //Start React App
             }
+        } else {
+            window.rsStartApp(); //Start React App
         }
     }
 
