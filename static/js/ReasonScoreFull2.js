@@ -32,7 +32,7 @@
 
     // Add Standard CSS
     const r = document.createElement('div')
-    r.innerHTML = `<link href="${rootAddress}/static/css/main.d9da9282.chunk.css" rel="stylesheet">`;
+    r.innerHTML = `<link href="${rootAddress}/static/css/main.927d127a.chunk.css" rel="stylesheet">`;
     document.body.appendChild(r);
 
     // Run any code that requires Javascript to have already been loaded and run 
