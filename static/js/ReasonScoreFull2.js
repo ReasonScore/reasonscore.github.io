@@ -9,7 +9,7 @@
     const scripts2 = [
         
         rootAddress + "/static/js/2.bd42430e.chunk.js",
-        rootAddress + "/static/js/main.c4120702.chunk.js",
+        rootAddress + "/static/js/main.791fbb8a.chunk.js",
     ]
 
     // default settings
@@ -32,7 +32,7 @@
 
     // Add Standard CSS
     const r = document.createElement('div')
-    r.innerHTML = `<link href="${rootAddress}/static/css/main.d831a2e0.chunk.css" rel="stylesheet">`;
+    r.innerHTML = `<link href="${rootAddress}/static/css/main.a0a9ac5e.chunk.css" rel="stylesheet">`;
     document.body.appendChild(r);
 
     // Run any code that requires Javascript to have already been loaded and run 
