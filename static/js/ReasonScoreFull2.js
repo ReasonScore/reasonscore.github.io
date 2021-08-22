@@ -9,7 +9,7 @@
     const scripts2 = [
         
         rootAddress + "/static/js/2.42e90fd6.chunk.js",
-        rootAddress + "/static/js/main.2a291fee.chunk.js",
+        rootAddress + "/static/js/main.7ae1b537.chunk.js",
     ]
 
     // default settings
