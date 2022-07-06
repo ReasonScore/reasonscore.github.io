@@ -7,8 +7,7 @@
         "https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js",
     ]
     const scripts2 = [
-
-        rootAddress + "/static/js/main.3deada54.js",
+        rootAddress + "/static/js/main.84002d48.js",
     ]
 
     // default settings
